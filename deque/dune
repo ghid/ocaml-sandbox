@@ -1,0 +1,3 @@
+(executable
+  (name deque)
+  (public_name deque))

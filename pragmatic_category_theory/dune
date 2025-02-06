@@ -1,0 +1,9 @@
+(executable
+ (name pct)
+ (public_name pct)
+ (modules_without_implementation chunk))
+
+(env
+ (dev
+  (flags
+   (:standard -w -32-34))))

@@ -1,0 +1,2 @@
+(executables
+ (names funct applic comp validator))
