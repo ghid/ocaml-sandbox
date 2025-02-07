@@ -1,0 +1,17 @@
+(library
+ (name funct)
+ (modules funct))
+
+(library
+ (name applic)
+ (modules applic))
+
+(library
+ (name comp)
+ (libraries applic)
+ (modules comp))
+
+(library
+ (name validator)
+ (libraries applic)
+ (modules validator))
