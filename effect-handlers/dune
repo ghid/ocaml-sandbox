@@ -1,0 +1,6 @@
+(executable
+ (name effect_handler)
+ (public_name effect_handler))
+(executable
+  (name control_inversion)
+  (public_name invert))

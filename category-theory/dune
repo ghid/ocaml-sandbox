@@ -1,0 +1,12 @@
+(library
+  (modules helpers)
+  (name helpers))
+
+(library
+ (modules monoids)
+ (name monoids))
+
+(library
+ (modules functors)
+ (libraries helpers)
+ (name functors))

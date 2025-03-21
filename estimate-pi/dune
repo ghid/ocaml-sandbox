@@ -1,0 +1,2 @@
+(executable
+ (name estimate_pi))

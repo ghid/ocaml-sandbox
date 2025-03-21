@@ -1,0 +1,19 @@
+(library
+ (name tree)
+ (modules tree))
+
+(library
+  (name vec)
+  (modules vec))
+
+(executable
+ (name tree_benchmark)
+ (public_name tree_benchmark)
+ (modules tree_benchmark)
+ (libraries tree))
+
+(executable
+  (name vec_benchmark)
+  (public_name vec_benchmark)
+  (modules vec_benchmark)
+  (libraries vec))
