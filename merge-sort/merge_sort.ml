@@ -1,3 +1,5 @@
+[@@@warning "-32"]
+
 type comparision =
   | LT
   | EQ
