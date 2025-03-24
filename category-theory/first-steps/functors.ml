@@ -28,7 +28,6 @@ end
 
 module TestFunctor (F : FUNCTOR) = struct
   open F
-  open Helpers
 
   let test_id x = assert (fmap id x = x)
   let test_compose f g x = assert (fmap (f <.> g) x = fmap f (fmap g x))
@@ -55,8 +54,6 @@ end
 
 (* Functors often come with generic helpers as well *)
 module FunctorUtils (F : FUNCTOR) = struct
-  open Helpers
-
   (** Generic functor helpers.
       These should be part of the Functor module itself... *)
   open F
@@ -100,7 +97,6 @@ module ApplicativeUtils (A : APPLICATIVE) = struct
   (** Generic function helpers.
       This should really be part of the APPLICATIVE module itself *)
 
-  open Helpers
   open A
   module FunU = FunctorUtils (A)
   include FunU
@@ -170,7 +166,6 @@ end
 *)
 
 module TestApplicative (A : APPLICATIVE) = struct
-  open Helpers
   open A
   module ApplU = ApplicativeUtils (A)
   open ApplU
