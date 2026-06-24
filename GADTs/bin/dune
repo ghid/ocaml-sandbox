@@ -1,0 +1,4 @@
+(executable
+ (public_name GADTs)
+ (name main)
+ (libraries GADTs))
