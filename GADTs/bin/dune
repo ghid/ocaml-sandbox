@@ -2,3 +2,11 @@
  (public_name GADTs)
  (name main)
  (libraries GADTs))
+
+(executable
+ (public_name expr)
+ (name expr))
+
+(executable
+ (public_name typed_list)
+ (name typed_list))
