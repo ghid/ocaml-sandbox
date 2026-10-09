@@ -1,0 +1,5 @@
+(executable
+  (name parser1))
+
+(executable
+  (name parser2))
